@@ -1,7 +1,6 @@
 package de.notjan.mmolobby.listener;
 
 import de.notjan.mmolobby.main.Main;
-import de.notjan.mmolobby.utils.ScoreboardMethod;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -14,14 +13,14 @@ public class QuitListener implements Listener {
 
     @EventHandler
     public void onQuit(PlayerQuitEvent e) {
-        new BukkitRunnable() {
-            @Override
-            public void run() {
-                for(Player all : Bukkit.getOnlinePlayers()) {
-                    ScoreboardMethod.setScoreboard(all);
-                }
-            }
-        }.runTaskLater(Main.getPlugin(), 1);
+      //  new BukkitRunnable() {
+         //   @Override
+          //  public void run() {
+           //     for(Player all : Bukkit.getOnlinePlayers()) {
+             //       ScoreboardMethod.setScoreboard(all);
+             //   }
+           // }
+       // }.runTaskLater(Main.getPlugin(), 1);
 
         if(InteractListener.hidedall.contains(e.getPlayer().getName())) {
             InteractListener.hidedall.remove(e.getPlayer().getName());
@@ -38,7 +37,7 @@ public class QuitListener implements Listener {
         }
 
         Player p = e.getPlayer();
-        String msg = Main.getPlugin().getConfig().getString("Lobby.LeaveMessage");
+        String msg = "§8[§c-§8] §c%player%";
         msg = msg.replaceAll("&", "§");
         msg = msg.replace("%player%", p.getName());
         e.setQuitMessage(msg);

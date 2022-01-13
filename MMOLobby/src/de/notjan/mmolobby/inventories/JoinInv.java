@@ -1,8 +1,10 @@
 package de.notjan.mmolobby.inventories;
 
 import de.notjan.mmolobby.utils.ItemAPI;
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.meta.SkullMeta;
 
 public class JoinInv {
 
@@ -11,7 +13,6 @@ public class JoinInv {
         p.getInventory().setItem(1, new ItemAPI(Material.STICK).setName("§c§lSpieler verstecken").build());
         p.getInventory().setItem(5, new ItemAPI(Material.BARRIER).setName("§c§lKein Gadget ausgewählt").build());
         p.getInventory().setItem(4, new ItemAPI(Material.CHEST).setName("§a§lGadgets").build());
-        p.getInventory().setItem(8, new ItemAPI(Material.SKULL_ITEM).setName("§a§lDein Profil").build());
         p.getInventory().setItem(7, new ItemAPI(Material.GLOWSTONE_DUST).setName("§e§lLobby").build());
     }
 }

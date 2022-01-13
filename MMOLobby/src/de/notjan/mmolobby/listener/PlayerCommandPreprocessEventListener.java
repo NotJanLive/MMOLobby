@@ -1,7 +1,6 @@
 package de.notjan.mmolobby.listener;
 
 import de.notjan.mmolobby.main.Main;
-import de.notjan.mmolobby.utils.ScoreboardMethod;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

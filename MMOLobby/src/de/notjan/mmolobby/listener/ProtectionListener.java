@@ -1,6 +1,7 @@
 package de.notjan.mmolobby.listener;
 
 import de.notjan.mmolobby.main.Main;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
