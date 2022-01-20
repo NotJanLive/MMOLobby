@@ -1,0 +1,12 @@
+name: MMOLobby2
+version: 1.5
+main: de.notjan.mmolobby.main.Main
+api-version: 1.16
+author: NotJan
+commands:
+  build:
+    aliases: b
+  vanish:
+    aliases: v
+  fly:
+    aliases: f
